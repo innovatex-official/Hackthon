@@ -22,8 +22,8 @@ This is the official landing page for **Innovatex 2025**, a premier web developm
 1. **Clone the repository:**
 
    ```bash
-   git clone <repository-url>
-   cd innovatex-2025
+   git clone https://github.com/innovatex-official/Hackthon.git
+   cd Hackthon
    ```
 
 2. **Install dependencies:**
