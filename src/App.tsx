@@ -7,6 +7,8 @@ import FeaturesSection from "./components/Features";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 
+import InnovateXPromo from "./components/InnovateXPromo";
+
 export default function InnovatexLanding() {
   return (
     <div className="min-h-screen bg-[#020202] text-white font-sans selection:bg-indigo-500/30">
@@ -17,6 +19,7 @@ export default function InnovatexLanding() {
       <Schedule />
       <FeaturesSection />
       <FAQ />
+      <InnovateXPromo />
       <Footer />
     </div>
   );

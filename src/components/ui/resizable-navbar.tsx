@@ -136,14 +136,17 @@ export const NavbarItem = ({
   children,
   href,
   active,
+  onClick,
 }: {
   children: React.ReactNode;
   href: string;
   active?: boolean;
+  onClick?: () => void;
 }) => {
   return (
     <a
       href={href}
+      onClick={onClick}
       className={cn(
         "relative px-4 py-2 text-sm font-medium transition-colors duration-200 rounded-full",
         active ? "text-white" : "text-zinc-400 hover:text-white"
