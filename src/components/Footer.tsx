@@ -1,8 +1,13 @@
 import { Code2 } from "lucide-react";
+import { TextHoverEffect } from "./ui/text-hover-effect";
 
 const Footer = () => {
   return (
     <footer className="py-12 border-t border-white/10 bg-black text-sm">
+      <div className="w-full h-64 flex items-center justify-center mb-8">
+        <TextHoverEffect text="INNOVATEX" />
+      </div>
+
       <div className="container max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="flex items-center gap-2">
           <div className="p-1.5 bg-indigo-500/20 rounded-lg">

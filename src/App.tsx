@@ -3,7 +3,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Tracks from "./components/Tracks";
 import Schedule from "./components/Schedule";
-import Prizes from "./components/Prizes";
+import FeaturesSection from "./components/Features";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 
@@ -15,7 +15,7 @@ export default function InnovatexLanding() {
       <About />
       <Tracks />
       <Schedule />
-      <Prizes />
+      <FeaturesSection />
       <FAQ />
       <Footer />
     </div>

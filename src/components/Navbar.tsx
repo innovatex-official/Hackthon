@@ -37,7 +37,7 @@ const Navbar = () => {
               <Code2 className="w-5 h-5 text-indigo-400" />
             </div>
             <span className="font-display font-bold text-xl tracking-tight text-white">
-              INNOVATEX<span className="text-indigo-500">.</span>
+              InnovateX<span className="text-indigo-500">.</span>
             </span>
           </a>
 
