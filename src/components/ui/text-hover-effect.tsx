@@ -48,11 +48,9 @@ export const TextHoverEffect = ({
         >
           {hovered && (
             <>
-              <stop offset="0%" stopColor="#eab308" />
-              <stop offset="25%" stopColor="#ef4444" />
-              <stop offset="50%" stopColor="#3b82f6" />
-              <stop offset="75%" stopColor="#06b6d4" />
-              <stop offset="100%" stopColor="#8b5cf6" />
+              <stop offset="0%" stopColor="#6366f1" /> {/* Indigo-500 */}
+              <stop offset="50%" stopColor="#8b5cf6" /> {/* Violet-500 */}
+              <stop offset="100%" stopColor="#ec4899" /> {/* Pink-500 */}
             </>
           )}
         </linearGradient>
@@ -78,24 +76,28 @@ export const TextHoverEffect = ({
           />
         </mask>
       </defs>
+
+      {/* Background Stroke (Passive state) */}
       <text
         x="50%"
         y="50%"
         textAnchor="middle"
         dominantBaseline="middle"
-        strokeWidth="1"
-        className="fill-transparent stroke-zinc-200 font-display text-7xl font-bold dark:stroke-zinc-800"
-        style={{ opacity: hovered ? 0.7 : 0 }}
+        strokeWidth="0.5"
+        className="fill-transparent stroke-zinc-800 font-tech text-8xl font-bold tracking-widest uppercase"
+        style={{ opacity: hovered ? 0.7 : 1 }}
       >
         {text}
       </text>
+
+      {/* Animated Dash Stroke (On Load) */}
       <motion.text
         x="50%"
         y="50%"
         textAnchor="middle"
         dominantBaseline="middle"
-        strokeWidth="1"
-        className="fill-transparent stroke-zinc-200 font-display text-7xl font-bold dark:stroke-zinc-800"
+        strokeWidth="0.5"
+        className="fill-transparent stroke-zinc-700 font-tech text-8xl font-bold tracking-widest uppercase"
         initial={{ strokeDashoffset: 1000, strokeDasharray: 1000 }}
         animate={{
           strokeDashoffset: 0,
@@ -108,15 +110,17 @@ export const TextHoverEffect = ({
       >
         {text}
       </motion.text>
+
+      {/* Hover Reveal Fill/Stroke */}
       <text
         x="50%"
         y="50%"
         textAnchor="middle"
         dominantBaseline="middle"
         stroke="url(#textGradient)"
-        strokeWidth="1"
+        strokeWidth="1" // Slightly thicker on hover for impact
         mask="url(#textMask)"
-        className="fill-transparent font-display text-7xl font-bold"
+        className="fill-transparent font-tech text-8xl font-bold tracking-widest uppercase"
       >
         {text}
       </text>
