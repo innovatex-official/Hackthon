@@ -1,4 +1,4 @@
-# Innovatex 2025 - Hackathon Landing Page
+# Innovatex 2026 - Hackathon Landing Page
 
 This is the official landing page for **Innovatex 2025**, a premier web development hackathon. The project is built with React, TypeScript, Vite, Tailwind CSS, and Framer Motion.
 
